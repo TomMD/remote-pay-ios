@@ -1,26 +1,28 @@
-# remote-pay-ios
+![alt text](https://www.clover.com/assets/images/public-site/press/clover_primary_gray_rgb.png)
 
-A swift 2.3 implementation of the CloverConnector to enable iOS and MacOS to communicate with a tethered Clover Mini
+# Remote-Pay SDK for iOS
 
-- Dependencies
-  - ObjectMapper - provides JSON serialization/deserialization
-  - SwiftyJSON - provides simple JSON parsing
-  - Starscream - provides websocket client capabilities
+This repository provides a Swift 2.3 implementation of the CloverConnector SDK that enables iOS and MacOS to communicate with a tethered Clover Mini.
 
-- Building the example app
-  - download and insatll xcode 8.2.1 or 7.3.1 (swift 2.3 support)
-  - install cocoapods
-    - run `sudo gem install cocoapods`
-  - clone/download the CloverConnector repo
-  - cd remote-pay-ios/Example
-  - run `pod install`
-    - should create a Pods directory populated with dependencies
-    - should create a workspace file that includes the project, plus a pods project
-  - open the CloverConnector.xcworkspace file
-    - change the Bundle identifier for the CloverConnector > CloverConnector_Example target
-    - change the signing Team for the CloverConnector > CloverConnector_Example target
+### Dependencies
+  - ObjectMapper - Provides JSON serialization/deserialization
+  - SwiftyJSON - Provides simple JSON parsing
+  - Starscream - Provides WebSocket client capabilities
 
-- Using CloverConnector in your project
+### Building the Example App
+
+1. Download and install Xcode 7.3.1 or higher (with Sswift 2.3 support)
+2. Install CocoaPods
+    - Run `sudo gem install cocoapods`
+3. Clone/download this CloverConnector repository
+4. Type `cd remote-pay-ios/Example`
+5. Run `pod install`
+    - This should create a Pods directory populated with dependencies, as well as a workspace file that includes the Example project and an addition Pods project
+6. Open the CloverConnector.xcworkspace file
+    - Change the Bundle identifier for the CloverConnector > CloverConnector_Example target
+    - Change the signing Team for the CloverConnector > CloverConnector_Example target
+
+### Using CloverConnector in your project
   - pod 'CloverConnector', :git => 'https://github.com/clover/remote-pay-ios.git', :branch => '1.2.0.b'
   - Example cocoapod (http://cocoapods.org/) `Podfile` snippet
 ---
@@ -125,3 +127,9 @@ class ConnectionManager : DefaultCloverConnectorListener, PairingDeviceConfigura
 }
 
 ```
+
+### Help
+
+- [Tutorial for the iOS SDK](https://docs.clover.com/build/getting-started-with-cloverconnector/?sdk=ios)
+- [API Documentation](https://clover.github.io/remote-pay-ios/1.3.1/docs/index.html)
+- [Semi-Integration Space](https://community.clover.com/spaces/11/index.html) at the Clover Developer Community
