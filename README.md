@@ -11,13 +11,13 @@ This repository provides a Swift 2.3 implementation of the CloverConnector SDK t
 
 ### Building the Example App
 
-1. Download and install Xcode 7.3.1 or higher (with Sswift 2.3 support)
+1. Download and install Xcode 7.3.1 or higher (with Swift 2.3 support)
 2. Install CocoaPods
     - Run `sudo gem install cocoapods`
 3. Clone/download this CloverConnector repository
 4. Type `cd remote-pay-ios/Example`
 5. Run `pod install`
-    - This should create a Pods directory populated with dependencies, as well as a workspace file that includes the Example project and an addition Pods project
+    - This should create a Pods directory populated with dependencies, as well as a workspace file that includes the Example project and an additional Pods project
 6. Open the CloverConnector.xcworkspace file
     - Change the Bundle identifier for the CloverConnector > CloverConnector_Example target
     - Change the signing Team for the CloverConnector > CloverConnector_Example target
@@ -42,7 +42,7 @@ This repository provides a Swift 2.3 implementation of the CloverConnector SDK t
   end
   ```
 ---
-  Sample code using CloverConnector
+###  Sample code that uses CloverConnector
   ```swift
 import CloverConnector
 
