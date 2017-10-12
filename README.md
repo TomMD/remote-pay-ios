@@ -2,7 +2,7 @@
 
 # Clover SDK for iOS Integration
 
-A Swift 4 implementation of the CloverConnector to enable iOS and MacOS to communicate with a tethered Clover Mini.
+A Swift 4 implementation of the CloverConnector for enabling iOS and MacOS to communicate with a tethered Clover Mini.
 
 ## Version
 
@@ -10,9 +10,9 @@ Current version: 1.4.0
 
 NOTE: Full support for version 1.4 of the SDK requires version 143 or higher of the Remote Pay app.
 
-NOTE: To use the Swift 2.3 compatible version of this library, you will need to point your Podfile at the [1.4.0-swift2.3](https://github.com/clover/remote-pay-ios/tree/1.4.0-swift2.3) branch as listed below in the code sample.
+NOTE: To use the Swift 2.3-compatible version of this library, you will need to point your Podfile at the [1.4.0-swift2.3](https://github.com/clover/remote-pay-ios/tree/1.4.0-swift2.3) branch as listed below in the code sample.
 
-### Dependencies
+## Dependencies
 
 - ObjectMapper - Provides JSON serialization and deserialization.
 - SwiftyJSON - Provides simple JSON parsing.
